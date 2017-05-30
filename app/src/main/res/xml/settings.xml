@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="First Category">
+        <CheckBoxPreference
+            android:key="savePage"
+            android:title="Save Last Viewed Page"
+            android:defaultValue="true"
+            android:summary="This option lets you save your last viewed page of every book you read" />
+
+
+        <ListPreference
+            android:title="Scrolling type"
+            android:summary="Select between horizontal and vertical scrolling"
+            android:key="scrollType"
+            android:defaultValue="1"
+            android:entries="@array/scrollType_names"
+            android:entryValues="@array/scrollType_values" />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
